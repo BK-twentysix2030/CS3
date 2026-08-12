@@ -54,6 +54,7 @@ Take order
               Identify price of side
          ELSE: price is 0Php
 Enter price of meal, price of rice portion, price of side and calculate sum
+Display order summary and cost
 Ask customer for payment
 Calculate Change
      IF payment > total cost
