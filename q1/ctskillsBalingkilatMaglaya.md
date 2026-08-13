@@ -33,10 +33,10 @@ Please list possible sub-problems:
 Step 3: Define Computational Thinking Approaches
 For each sub-problem, apply CT skills:
 
- Sub-Problem                  CT Skill              Example Solution
- Slow Ordering                Decomposition         Pre-orders
- Manual Payment Calculation   Algorithm             Register for payment calculation      
- Lack of Supply Tracker       Pattern Recognition   Spreadsheet Menu Tracker
+ | Sub-Problem | CT Skill | Example Solution
+ | Slow Ordering | Decomposition | Pre-orders
+ | Manual Payment Calculation | Algorithm | Register for payment calculation      
+ | Lack of Supply Tracker | Pattern Recognition | Spreadsheet Menu Tracker
 
  Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
   Pseudocode for Sub-Problem 2
