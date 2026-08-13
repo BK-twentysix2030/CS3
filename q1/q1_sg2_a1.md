@@ -4,7 +4,7 @@
 
 Section: Balingkilat                      Score:____________
 
-C# / Name: #27 Allaina Maxene Leyran, #26 Caelyn Arabelle Maglaya, #27 Trish Aubrey Malaca   Date: Aug 12, 2026
+C# / Name: #25 Allaina Maxene Leyran, #26 Caelyn Arabelle Maglaya, #27 Trish Aubrey Malaca   Date: Aug 12, 2026
 
 
 ### Scenario
