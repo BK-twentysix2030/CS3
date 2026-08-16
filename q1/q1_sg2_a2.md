@@ -25,7 +25,7 @@ The problem: Finding the highest (Maximum) number from a given list of numbers.
 **Checklist to guide your answer:**
 | PseudoCode 1 | PseudoCode 2 |
 | ----------- | ----------- |
-| [/] Does the algorithm use one loop or two nested loops?<br>[] Does the algorithm repeat work unnecessarily?<br>[/] Which algorithm finishes in fewer steps? | [/] Does the algorithm use one loop or two nested loops?<br>[/] Does the algorithm repeat work unnecessarily?<br>[] Which algorithm finishes in fewer steps? |
+| [one loop] Does the algorithm use one loop or two nested loops?<br>[] Does the algorithm repeat work unnecessarily?<br>[/] Which algorithm finishes in fewer steps? | [one nested loop] Does the algorithm use one loop or two nested loops?<br>[/] Does the algorithm repeat work unnecessarily?<br>[] Which algorithm finishes in fewer steps? |
 
 **2. Readability**
 
