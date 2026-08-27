@@ -1,0 +1,12 @@
+class Hero:
+    def __init__(self, name, hp=100):
+        self.name = name
+        self.hp = hp
+    def take_damage(self, amount):
+        self.hp -= amount
+        print("Oh no!",self.name,"took damage. -",amount,"hp.\n")
+        
+myHero1 = Hero("Arthur")
+myHero2 = Hero("Morgana")
+myHero1.take_damage(10)
+print(myHero1.name, "has", myHero1.hp, "hp left.\n",myHero2.name, "has", myHero2.hp, "hp left.")
