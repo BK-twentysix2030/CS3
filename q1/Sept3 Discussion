@@ -1,0 +1,42 @@
+"""class Food:
+    #__name = ""
+    #def __init__(self, name):
+        self.__foodname = name
+        print(self.__foodname,"created")
+
+spaghetti = Food("Spaghetti")
+burger = Food("Burger")
+spaghetti.foodname = "something"
+#spaghetti.name = "Carbonara"
+print(spaghetti.name)"""
+
+class Building:
+    def __init__(self,name,floors=1):
+        self.__name = name
+        self.__floors = floors
+        print("Building",name,"built")
+
+bank = Building("Bank of Pisay",3)
+print(bank.floors)
+
+"""class Tusoktusok:
+    name = ""
+    sauce = None
+    def __init__(self,name):
+        self.name = name
+    def dip(self,sauce):
+        self.sauce = sauce
+    def eat(self):
+        print("I ate",self.name,"with",self.sauce.name,"and it tastes",self.sauce.taste)
+
+class Sauce:
+    name = ""
+    taste = ""
+    def __init__(self,name,taste):
+        self.name = name
+        self.taste = taste
+
+fishball = Tusoktusok("fishball")
+sauce = Sauce("vinegar","sour")
+fishball.dip(sauce)
+fishball.eat()"""
