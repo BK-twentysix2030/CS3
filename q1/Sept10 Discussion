@@ -1,0 +1,148 @@
+# inheritance
+class Vehicle:
+    def __init__(self,kindofvehicle):
+        self.kindofvehicle = kindofvehicle
+        print(self.kindofvehicle,"created")
+    def move(self,distance):
+        print(self.kindofvehicle,"moved",distance,end="")
+
+class Car(Vehicle):
+    def __init__(self,kindofvehicle,brand,model):
+        super().__init__(kindofvehicle)
+        print("It is a",brand,model)
+    def move(self,distance):
+        super().move(distance)
+        print("KM")
+class Boat(Vehicle):
+    def __init__(self,kindofvehicle,model):
+        super().__init__(kindofvehicle)
+        print("It is a",model)
+    def move(self,distance):
+        super().move(distance)
+        print("NM")
+
+veh = Vehicle("carriage")
+veh.move(5)
+car = Car("car","Toyota","Vios")
+car.move(10)
+boat = Boat("boat", "The Boat")
+boat.move(15)
+
+# composition -> when an object is built inside the class' constructor
+#               when main obj is deletes, inner also disappears
+class Mitochondria:
+    def __init__(self):
+        print("Mitochondria is created.")
+    def powerTheCell(self):
+        print("Mitochondria is providing power to cell.")
+    def __del__(self):
+        print("Mitochondria is gone")
+
+class Nucleus:
+    def __init__(self):
+        print("Nucleus is created.")
+    def __del__(self):
+        print("Nucleus is gone")
+
+class Cell:
+    def __init__(self):
+        self.mitochondria = Mitochondria()
+        self.nucleus = Nucleus()
+        print("cell is created.")
+    def exists(self):
+        self.mitochondria.powerTheCell()
+        print("Cell is existing.")
+    def __del__(self):
+        del self.mitochondria
+        del self.nucleus
+        print("Cell is deleted.")
+
+cellAtWork = Cell()
+cellAtWork.exists()
+del cellAtWork
+
+# aggregation -> obj is created with another class
+#               obj can get disassociated from OG obj
+class Sauce:
+    def __init__(self,name,taste):
+        self.name = name
+        self.taste = taste
+        print(self.name,"sauce is ready and it tastes",self.taste)
+    def __str__(self):
+        return "Here is the " + self.taste + " " + self.name
+
+class Tusoktusok:
+    def __init__(self,name,sauce):
+        self.name = name
+        self.sauce = sauce
+        print(self.name,"dipped in",self.sauce.name)
+    def eat(self):
+        print("Eating",self.name,"with",self.sauce.name)
+    def __def__(self):
+        print("I threw the",self.name,"in the trash can")
+
+vinegar = Sauce("vinegar","sour")
+fishball = Tusoktusok("fishball",vinegar)
+fishball.eat()
+del fishball
+print(vinegar.name)
+
+OR
+
+class Tusoktusok:
+    sauce = None
+    def __init__(self,name):
+        self.name = name
+    def dip(self,sauce):
+        self.sauce = sauce
+    def eat(self):
+        #print("I ate",self.name,"with",self.sauce.name,"and it tastes",self.sauce.taste)
+        print("I am eating",self.name)
+        if self.sauce != None:
+            print("It was dipped in,",self.sauce.name,"and it tastes",self.sauce.taste)
+        
+class Sauce:
+    def __init__(self,name,taste):
+        self.name = name
+        self.taste = taste
+    def __del__(self):
+        print("Ay natapon ang",self.name," Wala na tuloy")
+
+fishball = Tusoktusok("fishball")
+vinegar = Sauce("vinegar","sour")
+fishball.dip(vinegar)
+fishball.eat()
+kikiam = Tusoktusok("kikiam")
+kikiam.eat()
+del vinegar
+print()
+
+OR
+
+class Tusoktusok:
+    sauce = None
+    def __init__(self,name):
+        self.name = name
+    def dip(self,sauce):
+        self.sauce = sauce
+    def eat(self):
+        #print("I ate",self.name,"with",self.sauce.name,"and it tastes",self.sauce.taste)
+        print("I am eating",self.name)
+        if self.sauce != None:
+            print("It was dipped in,",self.sauce.name,"and it tastes",self.sauce.taste)
+        
+class Sauce:
+    def __init__(self,name,taste):
+        self.name = name
+        self.taste = taste
+    def __del__(self):
+        print("Ay natapon ang",self.name." Wala na tuloy")
+
+fishball = Tusoktusok("fishball")
+vinegar = Sauce("vinegar","sour")
+fishball.dip(vinegar)
+fishball.eat()
+kikiam = Tusoktusok("kikiam")
+kikkiam.eat()
+del vinegar
+print("It reached this part")
