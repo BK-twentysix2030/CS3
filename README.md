@@ -4,4 +4,4 @@ q1_sg2_a1: https://github.com/BK-twentysix2030/CS3/blob/20f25b043af8e98c668835b5
 <br>q1_sg2_a3: https://github.com/BK-twentysix2030/CS3/blob/4203b6d6f96cbf543625b6cc20eb9f82b53d67cf/q1/q1_sg2_a3.md
 <br>q1_sg5_a1_balingkilat_maglaya: https://github.com/BK-twentysix2030/CS3/blob/776e95077b00c4a9b26ca3a976af849199ca81dd/q1/q1_sg5_a1_balingkilat_maglaya
 <br>q1_sg6_balingkilat_maglaya: https://github.com/BK-twentysix2030/CS3/blob/58517c37ec04881a4b6f46022ee72c15d14cdfc8/q1/q1_sg6_balingkilat_maglaya.py
-<br>q1_sg7_balingkilat_maglaya: 
+<br>q1_sg7_balingkilat_maglaya: https://github.com/BK-twentysix2030/CS3/blob/a307052edde679a9bea16f1490e951e965ce8a3c/q1/q1_sg7_balingkilat_maglaya.py
