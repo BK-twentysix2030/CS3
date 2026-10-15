@@ -1,0 +1,66 @@
+"""Encapsulation
+class Hooman:
+    __name = "JM"; __age = 34; __birthday = "Oct 22, 1992"
+
+    def set_name(self,value):
+        self.__name = value
+    def get_name(self):
+        return f"I am {self.__name}."
+    
+    def set_age(self,value):
+        if value > 0:
+            self.__age = value
+    def get_age(self):
+        return f"I am {self.__age} years old."
+
+    @property
+    def name(self):
+        return f"I am {self.__name}. "
+    
+    @property
+    def age(self):
+        return f"I am {self.__age} years old. "
+
+    @name.setter
+    def name(self,value):
+        self.__name = value
+
+    @age.setter
+    def age(self,value):
+        if value > 0:
+            self.__age = value
+    
+h = Hooman()
+h.name = "Sir Bern"
+h.age = -30
+print(h.name + h.age)"""
+
+"""Inheritance
+class Animal:
+    __name = ""
+    __sound = ""
+    def makeSound(self):
+        print(self.sound)
+
+class Cow(Animal):
+    name = "Cow"
+    sound = "Moo"
+
+class Cat(Animal):
+    name = "Cat"
+    sound = "Meow"
+
+cow = Cow()
+cat = Cat()
+cow.makeSound()
+cat.makeSound()"""
+
+class Father:
+    hair = "Brown"
+class Mother:
+    eyes = "Blue eyes"
+class You(Father, Mother):
+    def describeYourself(self):
+        print("I have",self.hair,"hair and",self.eyes,"eyes. ")
+you = You()
+you.describeYourself()
