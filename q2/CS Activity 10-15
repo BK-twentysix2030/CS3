@@ -1,0 +1,53 @@
+class Publication
+    __title = ""; __author = ""
+    def __init__(title,author):
+        self.__title = title
+        self.__author = author
+    @title.getter
+    def get_title(self):
+        return f"Title: {self.title}"
+    @author.getter
+    def get_author(self):
+        return f"Author: {self.author}"
+    @title.setter
+    def get_title(title):
+        return f"Title: {self.title}"
+    @author.getter
+    def get_author(author):
+        return f"Title: {self.title}"
+        
+class Book(Publication):
+    def __init__(title,author,number_pages):
+        self.title = title
+        self.author = author
+        self.__number_pages = 0
+
+    @number_pages.setter
+    def set_number_of_pages(self,number_pages,value):
+        if value > 0:
+            self.__number_pages = value
+        else:
+            print("Number of pages must be above ZERO (0).")
+            
+    @number_pages.getter
+    def get_number_of_pages(self):
+        return f"Number of pages: {self.__number_pages}"
+class Magazine(Publication):
+    def __init__(title,author,issue_number):
+        self.title = title
+        self.author = author
+        self.__issue_number = 0
+
+    @issue_number.setter
+    def set_issue_number(self,number_pages,value):
+        if value > 0:
+            self.__number_pages = value
+        else:
+            print("Number of pages must be above ZERO (0).")
+            
+    @issue_number.getter
+    def get_issue_number(self):
+        return f"Number of pages: {self.__number_pages}"
+        print("I have",self.hair,"hair and",self.eyes,"eyes. ")
+
+pub1 = Publication("Journal of Experimental psychology", "Ratchiff")
